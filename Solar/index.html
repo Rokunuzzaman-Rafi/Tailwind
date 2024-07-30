@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" class="!scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Inter:wght@100;200;300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Solar Energy</title>
+  </head>
+  <body class="bg-body-dark text-white font-roboto overflow-x-hidden">
+    <!-- Nav -->
+    <nav class="relative container mx-auto">
+      <div class="flex justify-between items-center pt-6">
+        <div>
+          <a href="#"
+            ><img class="flex w-22" src="images/Logo.png" alt="logo"
+          /></a>
+        </div>
+
+        <div>
+          <ul
+            class="hidden md:flex text-center md:flex-row gap-10 lg:gap-20 tracking-[.16rem] text-md"
+          >
+            <li
+              class="bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-emerald-200 hover:to-emerald-500"
+            >
+              <a href="#">Home</a>
+            </li>
+            <li
+              class="bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-emerald-200 hover:to-emerald-500"
+            >
+              <a href="#benefits">Products</a>
+            </li>
+            <li
+              class="bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-emerald-200 hover:to-emerald-500"
+            >
+              <a href="#">Services</a>
+            </li>
+            <li
+              class="bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-emerald-200 hover:to-emerald-500"
+            >
+              <a href="#">Success</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <button
+            class="tracking-[.12rem] px-4 py-2 rounded-full bg-gradient-to-br from-black to-dark-green transition-all shadow-xl shadow-emerald-200/10 hover:animate-pulse hidden md:flex"
+          >
+            Contact
+          </button>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-[#182025] sm:w-auto sm:self-center left-6 right-6 rounded-md shadow-lg shadow-neon"
+        >
+          <a
+            class="bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-emerald-200 hover:to-emerald-500"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-emerald-200 hover:to-emerald-500"
+            href="#"
+            >Products</a
+          >
+          <a
+            class="bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-emerald-200 hover:to-emerald-500"
+            href="#"
+            >Services</a
+          >
+          <a
+            class="bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-emerald-200 hover:to-emerald-500"
+            href="#"
+            >Success</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Start body section-->
+    <main>
+      <!-- Hero section -->
+      <section class="container mx-auto mt-14">
+        <div class="flex flex-col justify-center md:flex-row md:justify-around">
+          <div class="flex flex-col justify-center text-center">
+            <p
+              class="uppercase font-extralight text-[.70rem] tracking-[0.40rem] mb-4"
+            >
+              Save your cost
+            </p>
+            <h1 class="">
+              <span
+                class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-emerald-200 to-emerald-400 font-extrabold text-6xl uppercase tracking-widest"
+                >Reusable</span
+              >
+              <br />
+              <span class="font-extrabold text-6xl uppercase tracking-widest"
+                >Energy</span
+              >
+            </h1>
+            <p
+              class="tracking-wider mt-4 bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500"
+            >
+              Enjoy green energy to safe environment <br />
+              by less money than typical power.
+            </p>
+            <div class="space-y-8 space-x-4">
+              <button
+                class="tracking-[.12rem] px-4 py-2 bg-gradient-to-b from-dark-green to-black rounded-full hover:bg-gradient-to-br hover:from-black hover:to-dark-green hover:transition-all hover:shadow-xl hover:shadow-emerald-200/10 hover:animate-pulse"
+              >
+                Book Now
+              </button>
+              <button
+                class="tracking-[.12rem] px-4 py-2 rounded-full bg-transparent to-black border border-gray-500 shadow-xl shadow-emerald-200/10 hover:animate-pulse"
+              >
+                <span>See Demo</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- right section -->
+          <div class="flex flex-col justify-center">
+            <span class="flex justify-center">
+              <img
+                class="w-80 h-auto object-contain"
+                src="images/solar panel.png"
+                alt="solar panel"
+              />
+            </span>
+
+            <div class="flex justify-center">
+              <div
+                class="flex flex-row flex-wrap space-x-4 justify-evenly items-center text-center bg-[#182025] rounded-lg max-w-md py-4 px-8"
+              >
+                <p>
+                  <span class="tracking-widest">5 days</span><br /><span
+                    class="font-extralight tracking-widest"
+                    >Backup</span
+                  >
+                </p>
+                <p>
+                  <span class="tracking-widest">8 hours</span><br /><span
+                    class="font-extralight tracking-widest"
+                    >Charging Time</span
+                  >
+                </p>
+                <p>
+                  <span class="tracking-widest">500w</span><br />
+                  <span class="font-extralight tracking-widest">
+                    Max Power</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits -->
+      <section class="container mx-auto mt-40">
+        <div>
+          <div class="flex justify-center">
+            <h1
+              class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-emerald-200 to-emerald-400 font-extrabold text-5xl tracking-widest inline-block justify-center items-center"
+            >
+              Benefits
+            </h1>
+          </div>
+          <div class="flex relative">
+            <img
+              class="w-40 sm:w-44 md:w-52 lg:w-64 xl:w-80 2xl:w-96 -mt-32"
+              src="images/leaf (1).png"
+              alt="leaf"
+            />
+
+            <img
+              class="w-40 sm:block sm:w-44 md:w-52 lg:w-64 xl:w-80 2xl:w-96"
+              src="images/grass.png"
+              alt="grass"
+            />
+            <img
+              class="hidden sm:block sm:w-44 md:w-52 lg:w-64 xl:w-80 2xl:w-96"
+              src="images/grass.png"
+              alt="grass.svg"
+            />
+
+            <img
+              class="hidden md:w-52 lg:hidden"
+              src="images/grass.png"
+              alt="grass.svg"
+            />
+            <img
+              class="w-40 sm:w-44 md:w-52 lg:w-64 xl:w-80 2xl:w-96 -mt-32"
+              src="images/leaf (1).png"
+              alt="leaf"
+            />
+          </div>
+        </div>
+
+        <!-- Points -->
+        <div id="benefits" class="mt-20">
+          <div class="flex justify-around">
+            <span
+              class="bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 text-sm flex flex-wrap w-44 text-center tracking-wider md:text-lg md:w-60 md:tracking-widest"
+              data-aos="slide-left"
+              >Long term sustainability</span
+            >
+            <span
+              data-aos="fade-up"
+              class="bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 text-sm flex flex-wrap w-44 text-center tracking-wider md:text-lg md:w-60 md:tracking-widest"
+              >Less expensive to bear cost</span
+            >
+          </div>
+          <div class="relative">
+            <div class="flex justify-center mt-10">
+              <img
+                class="w-16 z-10"
+                src="images/Eco friendly logo.png"
+                alt="eco friendly logo"
+              />
+            </div>
+            <span class="flex justify-around">
+              <img
+                class="absolute w-20 -mt-20 -ml-20"
+                src="images/left arrow.png"
+                alt="left arrow"
+              />
+              <img
+                class="absolute w-20 -mt-20 -mr-20"
+                src="images/right arrow.png"
+                alt="right arrow"
+              />
+            </span>
+          </div>
+          <div class="flex justify-center">
+            <h3
+              class="bg-clip-text text-transparent bg-gradient-to-br from-black via-emerald-700 to-emerald-300 inline-block font-bold text-2xl tracking-widest mt-4 mb-4"
+              data-aos="slide-up "
+            >
+              Cost Effective
+            </h3>
+          </div>
+          <span class="flex justify-center h-24"
+            ><img src="images/down arrow.png" alt="down arrow"
+          /></span>
+        </div>
+
+        <div class="mt-20">
+          <div class="flex justify-around">
+            <span
+              class="bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 text-sm flex flex-wrap w-44 text-center tracking-wider md:text-lg md:w-60 md:tracking-widest"
+              >Reduce and preserving fossil fuels</span
+            >
+            <span
+              data-aos="fade-up"
+              class="bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 text-sm flex flex-wrap w-40 text-center tracking-wider md:text-lg md:w-60 md:tracking-widest"
+              >Zero carbon energy</span
+            >
+          </div>
+          <div class="relative">
+            <div class="flex justify-center mt-10">
+              <img
+                class="w-16 z-10"
+                src="images/Eco friendly logo.png"
+                alt="eco friendly logo"
+              />
+            </div>
+            <span class="flex justify-around">
+              <img
+                class="absolute w-20 -mt-20 -ml-20"
+                src="images/left arrow.png"
+                alt="left arrow"
+              />
+              <img
+                class="absolute w-20 -mt-20 -mr-20"
+                src="images/right arrow.png"
+                alt="right arrow"
+              />
+            </span>
+          </div>
+          <div class="flex justify-center relative">
+            <h3
+              class="bg-clip-text text-transparent bg-gradient-to-br from-black via-emerald-700 to-emerald-300 inline-block font-bold text-2xl tracking-widest mt-4 mb-4"
+              data-aos="slide-up"
+            >
+              Eco Friendly
+            </h3>
+            <div class="absolute">
+              <img
+                class="animate-pulse -ml-20 md:-ml-40 md:w-full"
+                src="images/windmil.png"
+                alt="windmil"
+              />
+            </div>
+          </div>
+          <span class="flex justify-center h-24"
+            ><img src="images/down arrow.png" alt="down arrow"
+          /></span>
+        </div>
+
+        <div class="mt-20">
+          <div class="flex justify-around relative">
+            <span
+              class="bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 text-sm flex flex-wrap w-44 text-center tracking-wider md:text-lg md:w-60 md:tracking-widest"
+              >Balance system and P2P energy exchange</span
+            >
+            <span
+              data-aos="fade-up"
+              class="bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 text-sm flex flex-wrap w-44 text-center tracking-wider md:text-lg md:w-60 md:tracking-widest"
+              >Less depend on typical power</span
+            >
+          </div>
+          <div class="relative">
+            <div class="flex justify-center mt-10">
+              <img
+                class="w-16 z-10"
+                src="images/Eco friendly logo.png"
+                alt="eco friendly logo"
+              />
+            </div>
+            <span class="flex justify-around">
+              <img
+                class="absolute w-20 -mt-20 -ml-20"
+                src="images/left arrow.png"
+                alt="left arrow"
+              />
+              <img
+                class="absolute w-20 -mt-20 -mr-20"
+                src="images/right arrow.png"
+                alt="right arrow"
+              />
+            </span>
+          </div>
+          <div class="flex justify-center relative">
+            <h3
+              class="bg-clip-text text-transparent bg-gradient-to-br from-black via-emerald-700 to-emerald-300 inline-block font-bold text-2xl tracking-widest mt-4 mb-4"
+              data-aos="slide-up"
+            >
+              Energy Decentralization
+            </h3>
+            <div class="absolute -mr-80 md:-mr-96 mt-10 md:mt-0">
+              <img
+                class="w-40 md:w-80 animate-spin"
+                src="images/fan.png"
+                alt="fan"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section class="container mx-auto mt-60">
+        <div class="">
+          <div class="flex justify-center">
+            <h1
+              class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-emerald-200 to-emerald-400 font-extrabold text-5xl tracking-widest inline-block justify-center items-center"
+            >
+              Who We Are
+            </h1>
+          </div>
+          <div class="flex relative">
+            <img
+              class="w-40 sm:w-44 md:w-52 lg:w-64 xl:w-80 2xl:w-96 -mt-32"
+              src="images/leaf (1).png"
+              alt="leaf"
+            />
+
+            <img
+              class="w-40 sm:block sm:w-44 md:w-52 lg:w-64 xl:w-80 2xl:w-96"
+              src="images/grass.png"
+              alt="grass"
+            />
+            <img
+              class="hidden sm:block sm:w-44 md:w-52 lg:w-64 xl:w-80 2xl:w-96"
+              src="images/grass.png"
+              alt="grass.svg"
+            />
+
+            <img
+              class="hidden md:w-52 lg:hidden"
+              src="images/grass.png"
+              alt="grass.svg"
+            />
+            <img
+              class="w-40 sm:w-44 md:w-52 lg:w-64 xl:w-80 2xl:w-96 -mt-32"
+              src="images/leaf (1).png"
+              alt="leaf"
+            />
+          </div>
+        </div>
+
+        <div
+          class="bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 flex flex-col justify-center flex-wrap text-center p-6 space-y-4 mt-10"
+        >
+          <span>We are a Solar company.</span>
+
+          <span>
+            Our main target is to established solar system instead of typical
+            power.</span
+          >
+
+          <span>
+            So that people can evaluate new energy source and it’s power by
+            reducing zero carbon.</span
+          >
+        </div>
+
+        <div
+          class="flex justify-center flex-wrap text-center p-6 text-2xl space-x-4 md:space-x-10 md:text-3xl"
+        >
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-br from-slate-500 via-slate-300 to-slate-500"
+            >Microsoft</span
+          >
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-br from-slate-500 via-slate-300 to-slate-500"
+            >Tesla</span
+          >
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-br from-slate-500 via-slate-300 to-slate-500"
+            >Google</span
+          >
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-br from-slate-500 via-slate-300 to-slate-500"
+            >Apple</span
+          >
+        </div>
+
+        <div class="flex justify-center mt-10">
+          <button
+            class="tracking-[.12rem] px-4 py-2 rounded-full flex bg-gradient-to-br from-black to-dark-green transition-all shadow-xl shadow-emerald-200/10 hover:animate-pulse"
+          >
+            Contact Us
+          </button>
+        </div>
+        <div class="flex relative mt-32">
+          <img
+            class="w-40 sm:w-44 md:w-52 lg:w-64 xl:w-80 2xl:w-96 -mt-32"
+            src="images/leaf (1).png"
+            alt="leaf"
+          />
+
+          <img
+            class="w-40 sm:block sm:w-44 md:w-52 lg:w-64 xl:w-80 2xl:w-96"
+            src="images/grass.png"
+            alt="grass"
+          />
+          <img
+            class="hidden sm:block sm:w-44 md:w-52 lg:w-64 xl:w-80 2xl:w-96"
+            src="images/grass.png"
+            alt="grass.svg"
+          />
+
+          <img
+            class="hidden md:w-52 lg:hidden"
+            src="images/grass.png"
+            alt="grass.svg"
+          />
+          <img
+            class="w-40 sm:w-44 md:w-52 lg:w-64 xl:w-80 2xl:w-96 -mt-32"
+            src="images/leaf (1).png"
+            alt="leaf"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-20 space-y-10">
+      <div class="flex flex-col justify-center items-center mb-20">
+        <span class="mb-10"
+          ><img class="w-24" src="images/earth.png" alt="earth"
+        /></span>
+        <span
+          class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-emerald-200 to-emerald-400 font-medium text-4xl tracking-widest inline-block justify-center items-center"
+          data-aos="fade-down"
+          >Save Your Earth</span
+        >
+      </div>
+
+      <div
+        class="space-y-5 md:flex md:flex-row md:justify-around md:items-center"
+      >
+        <div class="flex justify-center">
+          <a href="#"><img src="images/Logo.png" alt="logo" /></a>
+        </div>
+        <div>
+          <ul class="flex space-x-4 justify-center text-sm tracking-widest">
+            <li
+              class="bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-emerald-200 hover:to-emerald-500"
+            >
+              <a href="#">Blog</a>
+            </li>
+            <li
+              class="bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-emerald-200 hover:to-emerald-500"
+            >
+              <a href="#">Career</a>
+            </li>
+            <li
+              class="bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-emerald-200 hover:to-emerald-500"
+            >
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li
+              class="bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-emerald-200 hover:to-emerald-500"
+            >
+              <a href="#">Terms & Conditions</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex justify-center space-x-4 items-center">
+          <a class="hover:animate-pulse" href="#"
+            ><img class="w-6" src="images/facebook.png" alt="facebook"
+          /></a>
+          <a class="hover:animate-pulse" href="#"
+            ><img class="w-6" src="images/twitter.png" alt="twitter"
+          /></a>
+          <a class="hover:animate-pulse" href="#"
+            ><img class="w-6" src="images/youtube.png" alt="youtube"
+          /></a>
+        </div>
+      </div>
+
+      <div
+        class="flex justify-center bg-clip-text text-transparent bg-gradient-to-r from-slate-500 via-slate-300 to-slate-500 tracking-widest text-sm pb-4"
+      >
+        <span>&copy; Copyrights 2024 - All Rights Reserved</span>
+      </div>
+    </footer>
+
+    <script src="js/animation.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
